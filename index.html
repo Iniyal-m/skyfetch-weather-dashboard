@@ -7,17 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="container">
         <h1>🌤️ SkyFetch</h1>
         <p class="tagline">Your Personal Weather Dashboard</p>
 
-        
+        <!-- 🔍 SEARCH SECTION -->
         <div class="search-section">
             <input type="text" id="city-input" placeholder="Enter city name..." />
             <button id="search-btn">🔍 Search</button>
         </div>
 
-        <!-- EXISTING -->
+        <!-- ✅ RECENT SEARCHES (Part 4) -->
+        <div id="recent-searches-section" class="recent-searches-section" style="display:none;">
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+                <h4>Recent Searches</h4>
+                <button id="clear-history-btn" class="clear-history-btn">Clear</button>
+            </div>
+            <div id="recent-searches-container"></div>
+        </div>
+
+        <!-- 🌦️ WEATHER DISPLAY -->
         <div id="weather-display">
             <p class="loading">Enter a city to get weather 🌍</p>
         </div>
@@ -25,8 +35,9 @@
 
     <!-- Axios CDN -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    
+
     <!-- Your JavaScript -->
     <script src="app.js"></script>
+
 </body>
 </html>

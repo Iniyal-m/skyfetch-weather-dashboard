@@ -141,3 +141,44 @@ h1 {
 .forecast-card p {
     margin: 5px 0;
 }
+/* 🔹 Recent Search Buttons */
+.recent-search-btn {
+    padding: 6px 12px;
+    border-radius: 15px;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.recent-search-btn:hover {
+    background: #667eea;
+    color: white;
+}
+
+/* 🔹 Clear Button */
+.clear-history-btn {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+#recent-searches-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.clear-history-btn {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background: #f8f8f8;
+    transition: 0.3s;
+}
+
+.clear-history-btn:hover {
+    background: red;
+    color: white;
+}
